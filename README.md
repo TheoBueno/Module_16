@@ -11,18 +11,28 @@ for their next move, click it, and mark it with their symbol, either an X or an 
 available to be picked.
 
 ## Roadmap of future improvements: 
-  I would possibly change this project the following ways:
+####  I would possibly change this project the following ways:
+  
 • Make each button that is empty reflect it by changing on hover; ✓
+
 • Keep the color of the + button black instead of red or white to be neutral; ✓
+
 • Create an alert that would make it explicit when a victory condition is achieved; ✓
+
 • Create a live visible log of play can be kept to the right of the board to show past moves;
+
 • Possible a time machine to undo moves;
 
-  How I would approach implementing these ideas:
+####  How I would approach implementing these ideas:
+
 • You could have the CSS shift the Y position of + sign as you hover a few px's to indicate it's clickable; ✓
+
 • Add a third condition to the determination of color for the className and have it be an empty string (''); ✓
+
 • Add a alert under an If condition to check if the victory condition has been achieved and pop the alert after a fraction of a second - giving time for the board to update before pausing the game ✓
+
 • If you use the setStateOfBoard(...stateOfBoard) you already have all the moves logged, so you could use that to post each move
+
 • Should you use a similar strategy to log the 9 states of the board with an array of arrays with nine positions any, just setting the state to array[3] would return you to the third move (assuming array [0] would be to restart the game).  
 
 ## Appearance:
